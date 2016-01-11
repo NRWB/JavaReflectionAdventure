@@ -25,3 +25,4 @@
 * http://stackoverflow.com/questions/11016092/how-to-load-classes-at-runtime-from-a-folder-or-jar
 * http://stackoverflow.com/questions/2203248/what-are-bytecodes-and-how-does-the-jvm-handle-them
 * https://en.wikibooks.org/wiki/Java_Programming/Byte_Code
+* http://stackoverflow.com/questions/60764/how-should-i-load-jars-dynamically-at-runtime
