@@ -16,22 +16,17 @@ public class ReadClassesWithin {
 
 	}
 
-	public static List<String> getClasseNames(String jarName) throws Exception {
+	public static List<String> getAllFiles(final String str) {
 		List<String> classes = new ArrayList<String>();
-		if (DEBUG)
-			System.out.println("Jar " + jarName);
-		JarInputStream jarFile = null;
-		jarFile = new JarInputStream(new FileInputStream(jarName));
-		JarEntry jarEntry;
+		JarInputStream jarFile = new JarInputStream(new FileInputStream(jarName));
 		while (true) {
-			jarEntry = jarFile.getNextJarEntry();
+			JarEntry jarEntry = jarFile.getNextJarEntry();
 			if (jarEntry == null)
 				break;
-			if (jarEntry.getName().endsWith(".class")) {
-				if (DEBUG)
-					System.out.println("Found " + jarEntry.getName().replaceAll("/", "\\."));
+			if (jarEntry.getName().endsWith(".class"))
 				classes.add(jarEntry.getName().replaceAll("/", "\\."));
-			}
+			else
+				System.out.println(jarEntry.getName());
 		}
 		if (jarFile != null) {
 			try {
