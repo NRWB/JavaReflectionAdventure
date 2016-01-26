@@ -2,12 +2,14 @@
 
 ## Projects related to java reflection:
 * https://github.com/jboss-javassist/javassist
+* https://github.com/java-decompiler/jd-gui
 * https://github.com/Storyyeller/Krakatau
-* https://commons.apache.org/proper/commons-bcel/
+* https://github.com/Konloch/bytecode-viewer
 * https://github.com/fesh0r/fernflower
 * https://bitbucket.org/mstrobel/procyon
+* https://commons.apache.org/proper/commons-bcel/
 * http://www.benf.org/other/cfr/
-* https://github.com/java-decompiler/jd-gui
+* http://www.neshkov.com/dj.html
 
 ## Tutorials related to java reflection:
 * https://docs.oracle.com/javase/tutorial/reflect/
